@@ -1,0 +1,95 @@
+{
+  "2081": {
+    "1": {
+      "1": [
+        {
+          "type": "holiday",
+          "title": "Nepal Sambat New Year",
+          "description": "Celebration of Nepal Sambat New Year 1144"
+        },
+        {
+          "type": "tithi",
+          "title": "Pratipada",
+          "description": "First day of the lunar fortnight"
+        }
+      ],
+      "2": [
+        {
+          "type": "tithi",
+          "title": "Dwitiya",
+          "description": "Second day of the lunar fortnight"
+        }
+      ],
+      "8": [
+        {
+          "type": "holiday",
+          "title": "Buddha Jayanti",
+          "description": "Birth anniversary of Lord Buddha"
+        },
+        {
+          "type": "tithi",
+          "title": "Ashtami",
+          "description": "Eighth day of the lunar fortnight"
+        }
+      ],
+      "15": [
+        {
+          "type": "tithi",
+          "title": "Purnima",
+          "description": "Full moon day"
+        }
+      ],
+      "16": [
+        {
+          "type": "tithi",
+          "title": "Pratipada",
+          "description": "First day of the lunar fortnight"
+        }
+      ],
+      "30": [
+        {
+          "type": "tithi",
+          "title": "Amavasya",
+          "description": "New moon day"
+        }
+      ]
+    },
+    "2": {
+      "1": [
+        {
+          "type": "tithi",
+          "title": "Pratipada",
+          "description": "First day of the lunar fortnight"
+        }
+      ],
+      "8": [
+        {
+          "type": "tithi",
+          "title": "Ashtami",
+          "description": "Eighth day of the lunar fortnight"
+        }
+      ],
+      "15": [
+        {
+          "type": "tithi",
+          "title": "Purnima",
+          "description": "Full moon day"
+        }
+      ],
+      "16": [
+        {
+          "type": "tithi",
+          "title": "Pratipada",
+          "description": "First day of the lunar fortnight"
+        }
+      ],
+      "30": [
+        {
+          "type": "tithi",
+          "title": "Amavasya",
+          "description": "New moon day"
+        }
+      ]
+    }
+  }
+} 

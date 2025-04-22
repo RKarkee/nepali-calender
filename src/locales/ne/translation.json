@@ -1,0 +1,34 @@
+{
+  "calendar": {
+    "months": {
+      "baishakh": "वैशाख",
+      "jestha": "जेठ",
+      "ashar": "असार",
+      "shrawan": "साउन",
+      "bhadra": "भदौ",
+      "ashwin": "असोज",
+      "kartik": "कार्तिक",
+      "mangsir": "मंसिर",
+      "poush": "पुष",
+      "magh": "माघ",
+      "falgun": "फाल्गुन",
+      "chaitra": "चैत"
+    },
+    "weekdays": {
+      "sunday": "आइतबार",
+      "monday": "सोमबार",
+      "tuesday": "मंगलबार",
+      "wednesday": "बुधबार",
+      "thursday": "बिहिबार",
+      "friday": "शुक्रबार",
+      "saturday": "शनिबार"
+    },
+    "navigation": {
+      "previous": "अघिल्लो",
+      "next": "अर्को",
+      "today": "आज",
+      "month": "महिना",
+      "year": "वर्ष"
+    }
+  }
+} 
