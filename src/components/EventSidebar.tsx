@@ -3,12 +3,14 @@ import { CalendarEvent } from '../types/events';
 import { toNepaliDigits } from '../utils/calendar';
 import { LANGUAGE_CONFIG } from '../config/language';
 
+type SupportedLanguage = keyof typeof LANGUAGE_CONFIG;
+
 interface EventSidebarProps {
   events: CalendarEvent[];
   selectedDate: string;
   selectedMonth: number;
   selectedYear: number;
-  language: string;
+  language: SupportedLanguage;
 }
 
 const EventSidebar: React.FC<EventSidebarProps> = ({
@@ -54,7 +56,7 @@ const EventSidebar: React.FC<EventSidebarProps> = ({
 
       {events.length === 0 ? (
         <p className="text-gray-500 text-center py-4">
-          {LANGUAGE_CONFIG[language].events.noEvents}
+          {/* {LANGUAGE_CONFIG[language].events.noEvents} */}
         </p>
       ) : (
         <div className="space-y-4">

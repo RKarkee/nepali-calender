@@ -1,6 +1,7 @@
-import { CalendarDay, MonthData } from '../types/calendar';
+import { CalendarDay, MonthData,  } from '../types/calendar';
 import { ICalendarRepository } from '../repositories/CalendarRepository';
 import NepaliDate from 'nepali-date-converter';
+import { CalendarEvent } from '../types/events';
 
 export class CalendarService {
   constructor(private repository: ICalendarRepository) {}
@@ -16,7 +17,7 @@ export class CalendarService {
       return days.map(day => ({
         ...day,
         holiday: holidays.has(day.bsDate),
-        events: events.get(day.bsDate) || []
+        events: events.get(day.bsDate) || [] as CalendarEvent[]
       }));
     } catch (error) {
       console.error('Error fetching month days:', error);
@@ -35,7 +36,7 @@ export class CalendarService {
         days: monthData.days.map(day => ({
           ...day,
           holiday: holidays.has(day.bsDate),
-          events: events.get(day.bsDate) || []
+          events: events.get(day.bsDate) || [] as CalendarEvent[]
         }))
       };
     } catch (error) {

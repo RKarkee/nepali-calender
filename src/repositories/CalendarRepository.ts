@@ -1,5 +1,5 @@
-import { CalendarDay, CalendarMonth, EventsData } from '../types/calendar';
-import { CalendarEvent, MonthData } from '../types/events';
+import { CalendarDay, EventsData, MonthData } from '../types/calendar';
+import { CalendarEvent } from '../types/events';
 import NepaliDate from 'nepali-date-converter';
 import { getMonthStartDay, getDaysInMonth, NEPALI_MONTHS } from '../utils/calendar';
 import eventsData from '../data/events.json';
@@ -12,7 +12,7 @@ export interface ICalendarRepository {
 }
 
 export class CalendarRepository implements ICalendarRepository {
-  private events: EventsData = eventsData;
+  private events: EventsData = eventsData as unknown as EventsData;
 
   async getMonthDays(year: number, month: number): Promise<CalendarDay[]> {
     const daysInMonth = getDaysInMonth(year, month);
