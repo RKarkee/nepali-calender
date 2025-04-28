@@ -19,6 +19,21 @@ const CalendarGrid: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [currentDate, setCurrentDate] = useState(new NepaliDate());
 
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('https://opensheet.elk.sh/1UQeVCpJTOF_Sl1pJAisgEbQHsGspDQJGPhvywt0X4Ts/Sheet1')
+        .then(response => response.json())
+        .then(data => {
+          setData(data);
+          setLoading(false);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          setLoading(false);
+        });
+  }, []);
   // Update current date every minute
   useEffect(() => {
     const interval = setInterval(() => {
@@ -161,6 +176,14 @@ const CalendarGrid: React.FC = () => {
             );
           })}
         </div>
+      </div>
+      <div className={'mt-2'}>
+        {data.map((item, index) => <div key={index}>
+          <div>
+            <div className="">{item.event_name_english}</div>
+            <span className="text-xs text-gray-500">{item.event_date_bs}</span>
+          </div>
+          </div>)}
       </div>
     </div>
   );

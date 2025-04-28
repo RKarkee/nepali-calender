@@ -26,7 +26,7 @@ const CalendarHeader: React.FC<{
   englishMonthRange,
 }) => {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3 py-2 sm:py-3 mb-2 sm:mb-4 bg-gray-50 rounded-lg p-2 sm:p-3">
+    <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3 py-2 sm:py-3 mb-2 sm:mb-4 bg-primary-50 rounded-lg p-2 sm:p-3">
       <button
         // onClick={handleTodayClick}
         className={`calendar-header-btn text-xs sm:text-sm md:text-base 
@@ -116,7 +116,7 @@ const CalendarHeader: React.FC<{
         </button>
       </div>
 
-      <div className="text-xs sm:text-sm md:text-base text-red-600 font-medium">
+      <div className="text-xs sm:text-sm md:text-base text-orange-600  font-bold">
         {englishMonthRange}
       </div>
     </div>
